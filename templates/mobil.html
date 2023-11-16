@@ -1,0 +1,462 @@
+{% extends "base.html" %} {% block title %} Mobil {% endblock %} {% block content %}
+<div class="jumbotron" style="background-color: rgb(129, 86, 255); color: aliceblue; height: 100%; display: flex; margin-bottom: -10px; margin-top: -10px" >
+  <section class="container my-5 pb-5 bg-light text-black rounded-4 mobil-list">
+    <div class="row">
+      <div class="col" id="foto">
+        <center>
+          <h1 style="padding-bottom: 2%; padding-top: 2%">Avanza</h1>
+        </center>
+        <hr />
+        <div class="container" style="padding-top: 2rem">
+          <div class="row">
+            <div class="col">
+              <img src="{{ url_for('static', filename='/images/pngegg.png') }}" alt="Gambar Mobil" width="70%" height="70%" />
+              <h6>Keterangan:</h6>
+              <table cellpadding="6" cellspacing="2" style="padding-left: 50px; margin-left: 0px">
+                <th>
+                  <tr>
+                    <th>
+                      <i class="bx bx-id-card"> AB 4646 UH </i>
+                    </th>
+                    <th style="padding-left: 80px">
+                      <i class="icofont-car"> Sedan </i>
+                    </th>
+                  </tr>
+                  <tr style="margin: left 50px">
+                    <th>
+                      <i class="icofont-calendar"> 2019 </i>
+                    </th>
+                    <th style="padding-left: 80px">
+                      <i class="bx bxs-palette"> Hitam </i>
+                    </th>
+                  </tr>
+                </th>
+              </table>
+            </div>
+            <div class="col-7" id="info">
+              <table>
+                <!--<center>
+                  <div id="termasuk" class="btn text-white rounded-3" style="background-color: rgb(118, 22, 243)">Mobil-Parkir-Sopir-BBM-Konsumsi Supir</div>
+                </center>-->
+              </table>
+              <br />
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="btn btn-light rounded-3" style="width: 100%">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th><strong>Durasi</strong></th>
+                            <th><strong>Harga</strong></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1 jam</td>
+                            <td>Rp 100.000 </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="pesan">
+                <center>
+                    <a href="{{url_for('booking')}}"><button class="btn text-white" style="background-color: rgb(118, 22, 243)">Booking Mobil</button></a>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+</div>
+
+<!-- mobil 2 -->
+<div class="jumbotron" style="background-color: rgb(129, 86, 255); color: aliceblue; height: 100%; display: flex; margin-bottom: -10px; margin-top: -10px" >
+  <section class="container my-5 pb-5 bg-light text-black rounded-4 mobil-list">
+    <div class="row">
+      <div class="col" id="foto">
+        <center>
+          <h1 style="padding-bottom: 2%; padding-top: 2%">Daihatsu Ayla</h1>
+        </center>
+        <hr />
+        <div class="container" style="padding-top: 2rem">
+          <div class="row">
+            <div class="col">
+              <img src="{{ url_for('static', filename='/images/pngwing.com_4.png') }}" alt="Gambar Mobil" width="70%" height="70%" />
+              <h6>Keterangan:</h6>
+              <table cellpadding="6" cellspacing="2" style="padding-left: 50px; margin-left: 0px">
+                <th>
+                  <tr>
+                    <th>
+                      <i class="bx bx-id-card"> AA 3751 JU </i>
+                    </th>
+                    <th style="padding-left: 80px">
+                      <i class="icofont-car"> Sedan </i>
+                    </th>
+                  </tr>
+                  <tr style="margin: left 50px">
+                    <th>
+                      <i class="icofont-calendar"> 2020 </i>
+                    </th>
+                    <th style="padding-left: 80px">
+                      <i class="bx bxs-palette"> Kuning </i>
+                    </th>
+                  </tr>
+                </th>
+              </table>
+            </div>
+            <div class="col-7" id="info">
+              <table>
+                <!--<center>
+                  <div id="termasuk" class="btn text-white rounded-3" style="background-color: rgb(118, 22, 243)">Mobil-Parkir-Sopir-BBM-Konsumsi Supir</div>
+                </center>-->
+              </table>
+              <br />
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="btn btn-light rounded-3" style="width: 100%">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th><strong>Durasi</strong></th>
+                            <th><strong>Harga</strong></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1 jam</td>
+                            <td>Rp 200.000 </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="pesan">
+                <center>
+                    <a href="{{url_for('booking')}}"><button class="btn text-white" style="background-color: rgb(118, 22, 243)">Booking Mobil</button></a>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+</div>
+
+<!-- Mobil 3 -->
+<div class="jumbotron" style="background-color: rgb(129, 86, 255); color: aliceblue; height: 100%; display: flex; margin-bottom: -10px; margin-top: -10px" >
+  <section class="container my-5 pb-5 bg-light text-black rounded-4 mobil-list">
+    <div class="row">
+      <div class="col" id="foto">
+        <center>
+          <h1 style="padding-bottom: 2%; padding-top: 2%">Honda Civic</h1>
+        </center>
+        <hr />
+        <div class="container" style="padding-top: 2rem">
+          <div class="row">
+            <div class="col">
+              <img src="{{ url_for('static', filename='/images/Civic.png') }}" alt="Gambar Mobil" width="70%" height="70%" />
+              <h6>Keterangan:</h6>
+              <table cellpadding="6" cellspacing="2" style="padding-left: 50px; margin-left: 0px">
+                <th>
+                  <tr>
+                    <th>
+                      <i class="bx bx-id-card"> AB 9877 CL </i>
+                    </th>
+                    <th style="padding-left: 80px">
+                      <i class="icofont-car"> Sport </i>
+                    </th>
+                  </tr>
+                  <tr style="margin: left 50px">
+                    <th>
+                      <i class="icofont-calendar"> 2022 </i>
+                    </th>
+                    <th style="padding-left: 80px">
+                      <i class="bx bxs-palette"> Putih </i>
+                    </th>
+                  </tr>
+                </th>
+              </table>
+            </div>
+            <div class="col-7" id="info">
+              <table>
+                <!--<center>
+                  <div id="termasuk" class="btn text-white rounded-3" style="background-color: rgb(118, 22, 243)">Mobil-Parkir-Sopir-BBM-Konsumsi Supir</div>
+                </center>-->
+              </table>
+              <br />
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="btn btn-light rounded-3" style="width: 100%">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th><strong>Durasi</strong></th>
+                            <th><strong>Harga</strong></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1 jam</td>
+                            <td>Rp 500.000 </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="pesan">
+                <center>
+                    <a href="{{url_for('booking')}}"><button class="btn text-white" style="background-color: rgb(118, 22, 243)">Booking Mobil</button></a>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+</div>
+
+<!-- Mobil 4 -->
+<div class="jumbotron" style="background-color: rgb(129, 86, 255); color: aliceblue; height: 100%; display: flex; margin-bottom: -10px; margin-top: -10px" >
+  <section class="container my-5 pb-5 bg-light text-black rounded-4 mobil-list">
+    <div class="row">
+      <div class="col" id="foto">
+        <center>
+          <h1 style="padding-bottom: 2%; padding-top: 2%">Toyota Supri</h1>
+        </center>
+        <hr />
+        <div class="container" style="padding-top: 2rem">
+          <div class="row">
+            <div class="col">
+              <img src="{{ url_for('static', filename='/images/supra.png') }}" alt="Gambar Mobil" width="70%" height="70%" />
+              <h6>Keterangan:</h6>
+              <table cellpadding="6" cellspacing="2" style="padding-left: 50px; margin-left: 0px">
+                <th>
+                  <tr>
+                    <th>
+                      <i class="bx bx-id-card"> AD 1234 IH </i>
+                    </th>
+                    <th style="padding-left: 80px">
+                      <i class="icofont-car"> Sport </i>
+                    </th>
+                  </tr>
+                  <tr style="margin: left 50px">
+                    <th>
+                      <i class="icofont-calendar"> 2077 </i>
+                    </th>
+                    <th style="padding-left: 80px">
+                      <i class="bx bxs-palette"> Putih </i>
+                    </th>
+                  </tr>
+                </th>
+              </table>
+            </div>
+            <div class="col-7" id="info">
+              <table>
+                <!--<center>
+                  <div id="termasuk" class="btn text-white rounded-3" style="background-color: rgb(118, 22, 243)">Mobil-Parkir-Sopir-BBM-Konsumsi Supir</div>
+                </center>-->
+              </table>
+              <br />
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="btn btn-light rounded-3" style="width: 100%">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th><strong>Durasi</strong></th>
+                            <th><strong>Harga</strong></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1 jam</td>
+                            <td>Rp 500.000 </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="pesan">
+                <center>
+                    <a href="{{url_for('booking')}}"><button class="btn text-white" style="background-color: rgb(118, 22, 243)">Booking Mobil</button></a>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+</div>
+
+<!-- Mobil 5 -->
+<div class="jumbotron" style="background-color: rgb(129, 86, 255); color: aliceblue; height: 100%; display: flex; margin-bottom: -10px; margin-top: -10px" >
+  <section class="container my-5 pb-5 bg-light text-black rounded-4 mobil-list">
+    <div class="row">
+      <div class="col" id="foto">
+        <center>
+          <h1 style="padding-bottom: 2%; padding-top: 2%">Toyota Yaris</h1>
+        </center>
+        <hr />
+        <div class="container" style="padding-top: 2rem">
+          <div class="row">
+            <div class="col">
+              <img src="{{ url_for('static', filename='/images/pngwing.com_3.png') }}" alt="Gambar Mobil" width="70%" height="70%" />
+              <h6>Keterangan:</h6>
+              <table cellpadding="6" cellspacing="2" style="padding-left: 50px; margin-left: 0px">
+                <th>
+                  <tr>
+                    <th>
+                      <i class="bx bx-id-card"> AB A88B JO </i>
+                    </th>
+                    <th style="padding-left: 80px">
+                      <i class="icofont-car"> Sedan </i>
+                    </th>
+                  </tr>
+                  <tr style="margin: left 50px">
+                    <th>
+                      <i class="icofont-calendar"> 2018 </i>
+                    </th>
+                    <th style="padding-left: 80px">
+                      <i class="bx bxs-palette"> Merah </i>
+                    </th>
+                  </tr>
+                </th>
+              </table>
+            </div>
+            <div class="col-7" id="info">
+              <table>
+                <!--<center>
+                  <div id="termasuk" class="btn text-white rounded-3" style="background-color: rgb(118, 22, 243)">Mobil-Parkir-Sopir-BBM-Konsumsi Supir</div>
+                </center>-->
+              </table>
+              <br />
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="btn btn-light rounded-3" style="width: 100%">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th><strong>Durasi</strong></th>
+                            <th><strong>Harga</strong></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1 jam</td>
+                            <td>Rp 100.000 </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="pesan">
+                <center>
+                    <a href="{{url_for('booking')}}"><button class="btn text-white" style="background-color: rgb(118, 22, 243)">Booking Mobil</button></a>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+</div>
+
+<!-- Mobil 6 -->
+<div class="jumbotron" style="background-color: rgb(129, 86, 255); color: aliceblue; height: 100%; display: flex; margin-bottom: -10px; margin-top: -10px" >
+  <section class="container my-5 pb-5 bg-light text-black rounded-4 mobil-list">
+    <div class="row">
+      <div class="col" id="foto">
+        <center>
+          <h1 style="padding-bottom: 2%; padding-top: 2%">Hiace</h1>
+        </center>
+        <hr />
+        <div class="container" style="padding-top: 2rem">
+          <div class="row">
+            <div class="col">
+              <img src="{{ url_for('static', filename='/images/pngegg_1.png') }}" alt="Gambar Mobil" width="70%" height="70%" />
+              <h6>Keterangan:</h6>
+              <table cellpadding="6" cellspacing="2" style="padding-left: 50px; margin-left: 0px">
+                <th>
+                  <tr>
+                    <th>
+                      <i class="bx bx-id-card"> B 9874 XYZ </i>
+                    </th>
+                    <th style="padding-left: 80px">
+                      <i class="icofont-car"> Minivan </i>
+                    </th>
+                  </tr>
+                  <tr style="margin: left 50px">
+                    <th>
+                      <i class="icofont-calendar"> 2018 </i>
+                    </th>
+                    <th style="padding-left: 80px">
+                      <i class="bx bxs-palette"> Putih </i>
+                    </th>
+                  </tr>
+                </th>
+              </table>
+            </div>
+            <div class="col-7" id="info">
+              <table>
+                <!--<center>
+                  <div id="termasuk" class="btn text-white rounded-3" style="background-color: rgb(118, 22, 243)">Mobil-Parkir-Sopir-BBM-Konsumsi Supir</div>
+                </center>-->
+              </table>
+              <br />
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="btn btn-light rounded-3" style="width: 100%">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th><strong>Durasi</strong></th>
+                            <th><strong>Harga</strong></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1 jam</td>
+                            <td>Rp 120.000 </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="pesan">
+                <center>
+                    <a href="{{url_for('booking')}}"><button class="btn text-white" style="background-color: rgb(118, 22, 243)">Booking Mobil</button></a>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+</div>
+{% endblock %}
